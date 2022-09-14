@@ -6,7 +6,7 @@ module.exports = {
     try {
       const entryItems = await Entries.find({ userId: req.user.id });
       res.render("dashboard.ejs", {
-        Entries: entryItems,
+        entryItems,
         user: req.user,
       });
     } catch (err) {
@@ -16,7 +16,7 @@ module.exports = {
   createEntry: async (req, res) => {
     try {
       await Entries.create({
-        entry: req.body.entryItem,
+        entry: req.body.entry,
         date: req.body.date,
         title: req.body.title,
         mood: req.body.mood,
