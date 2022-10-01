@@ -351,7 +351,6 @@ DASHBOARD
 .dash-logo img {
   width: 240px;
   height: 75px;
-  margin-left: 60em;
 }
 
 .dash-content-bkgrnd {
@@ -448,7 +447,10 @@ footer {
 /*******************************************/
 
 ul {
-  list-style: none;
+  display: flex;
+    list-style: none;
+    flex-direction: row-reverse;
+    align-items: flex-end;
 }
 
 .menu-link {
