@@ -1,0 +1,131 @@
+[33mcommit e5748f5f8554c78f2966a363b332e23ca2f2aed3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Fri Sep 30 21:27:35 2022 -0400
+
+    add mood bar functionality
+
+[33mcommit 9f6ac55d296a6ccf11a4d289c0fb33c6237bbab5[m
+Author: Daniel Bennett <danielandrew362@gmail.com>
+Date:   Tue Sep 6 18:19:32 2022 -0400
+
+    refactor routes
+
+[33mcommit 03726255d66b96391b27def49d9813b199831c1d[m
+Author: Daniel Bennett <danielandrew362@gmail.com>
+Date:   Tue Sep 6 17:45:11 2022 -0400
+
+    refactor routes
+
+[33mcommit 50b085d3785f3c49ee83161678d8fdf7eb70434c[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Tue Sep 6 13:46:25 2022 -0400
+
+    add links
+
+[33mcommit 66396189630c2396bcdbbcac2f6ebb3b3bc25cbb[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Tue Sep 6 13:20:14 2022 -0400
+
+    add path, change auth.js
+
+[33mcommit 571aae6faed2987d9c13ec5c4b3a917a65c715f3[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Mon Sep 5 17:40:00 2022 -0400
+
+    refactoring routes
+
+[33mcommit af6551fe4eb2c4159711da936ceb04c1d19480df[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Mon Sep 5 17:08:54 2022 -0400
+
+    refactoring and transfer from replit
+
+[33mcommit 753be1d530d353784c033f98488e60ce01ad14c8[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Mon Sep 5 13:40:55 2022 -0400
+
+    initial commit
+
+[33mcommit 168ff1c9fa1dbd0908f45e4c7afa67e0f6170880[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Mon Sep 5 13:40:44 2022 -0400
+
+    initial commit
+
+[33mcommit 0420c56184dfc88db11cedadfb0f18dbaf895ba1[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Sun Sep 4 20:53:53 2022 -0400
+
+    removed completed property, set index route
+
+[33mcommit ef0ca2b52e8a1fcb0a405ea51081f0bd2959d380[m
+Author: Dabble362 <75595585+Dabble362@users.noreply.github.com>
+Date:   Sun Sep 4 20:31:58 2022 -0400
+
+    initial commit
+
+[33mcommit a3a29ca23dce56d9960ea931647e865151edf87f[m
+Author: Leon Noel <leon.a.noel+github@gmail.com>
+Date:   Tue Aug 30 13:12:08 2022 -0700
+
+    removed .vscode from gitignore
+
+[33mcommit 9cef0b7c05502fb07ac3f3a51895fa390e134049[m
+Author: Leon Noel <leon.a.noel+github@gmail.com>
+Date:   Tue Aug 30 13:09:09 2022 -0700
+
+    hide vscode folder in gitignore
+
+[33mcommit d65c1c62d381d3ef62df51fd54a980bc3290550d[m
+Author: Leon Noel <leon.a.noel+github@gmail.com>
+Date:   Tue Aug 30 13:06:19 2022 -0700
+
+    fixed passport auth error and added env file
+
+[33mcommit 67afe074f63c36937134c116cbcaa12a64afc9a8[m
+Merge: 7d14018 a59f99b
+Author: Leon Noel <leon.a.noel+github@gmail.com>
+Date:   Thu May 27 14:34:44 2021 -0700
+
+    Merge pull request #2 from JeremySeckinger/main
+    
+    Updated package.json with required dependencies and amended readme
+
+[33mcommit a59f99bd52c5badfd1ae808fcb58f54b2fa412e3[m
+Author: Jeremy Seckinger <jtseck@aol.com>
+Date:   Fri Apr 30 17:10:22 2021 -0700
+
+    Update README.md
+
+[33mcommit c6e064f9495e2305e251b3a6e0cdb9307bbe9391[m
+Author: Jeremy Seckinger <jtseck@aol.com>
+Date:   Fri Apr 30 16:49:03 2021 -0700
+
+    Updated package.json with required dependencies
+
+[33mcommit 7d1401831d65b8fdd5e43a08ef6c24f5b7cac19c[m
+Merge: a4cf43a 5da25bf
+Author: Leon Noel <leon.a.noel+github@gmail.com>
+Date:   Tue Apr 27 12:27:19 2021 -0700
+
+    Merge pull request #1 from Memphis1983/main
+    
+    Create README.md
+
+[33mcommit 5da25bffef736579adef0ead45e1b0903a402590[m
+Author: Kieran <60425579+Memphis1983@users.noreply.github.com>
+Date:   Mon Apr 26 03:37:30 2021 +0530
+
+    Update README.md
+
+[33mcommit 1cf9bfb07f65123dcef74c3c98f303d24bacc1e5[m
+Author: Kieran <60425579+Memphis1983@users.noreply.github.com>
+Date:   Mon Apr 26 02:25:44 2021 +0530
+
+    Create README.md
+
+[33mcommit a4cf43adac283463fbaae204aaf1915ea14eceda[m
+Author: Leon Noel <leon.a.noel+github@gmail.com>
+Date:   Sat Apr 24 22:07:25 2021 -0700
+
+    working build
