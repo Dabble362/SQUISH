@@ -285,7 +285,13 @@ textarea {
   color: white;
 }
 
-/*********************
+div.formPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/******
+***************
 MOOD BAR
 /*********************/
 
