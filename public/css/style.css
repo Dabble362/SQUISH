@@ -333,6 +333,8 @@ DASHBOARD
 .dash-nav {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .dash-title h2 {
@@ -340,7 +342,8 @@ DASHBOARD
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
-  margin-left: 0.4em;
+  padding-bottom: 0em;
+  margin-left: 14em;
 }
 
 .dash-logo {
