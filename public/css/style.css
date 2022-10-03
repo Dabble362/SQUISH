@@ -575,6 +575,7 @@ a.menu-link:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow: hidden;
 }
 .journalEntry {
   display: flex;
@@ -583,7 +584,7 @@ a.menu-link:hover {
   margin: 2em;
   background-color: #697BD8;
   width: 40em;
-  height: 30em;
+  height: 26em;
   border-radius: 25px;
 }
 .journalEntry h3, div.date,.journalEntry p {

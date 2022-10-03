@@ -66,8 +66,8 @@
             </div>
 
             <div class="dash-content-bkgrnd">
-                <!-- <div class="dash-filter">
-                    <span>Filter:</span>
+                <div class="dash-filter">
+                    <!-- <span>Filter:</span>
                     <div class="emoji">
 
                         <label class="moodContainer">
@@ -92,8 +92,8 @@
                             <iconify-icon id="sad" class="selectState" icon="fa6-regular:face-frown"></iconify-icon>
                         </label>
 
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
                 <div class="entriesContainer">
                     <% entryItems.forEach(function(entryItem){ %>
                         <article class="journalEntry">
@@ -121,20 +121,23 @@
                             <p><%=entryItem.entry %></p>
                         </article>
                     <% }) %>
-                    <div class="dash-all-buttons">
-                        <!-- <div class="dash-buttons">
-                            <div class="dash-button">
-                                <button type="submit">Previous</button>
-                            </div>
-                            <div class="dash-button">
-                                <button type="submit">Next</button>
-                            </div>
-                        </div> -->
-                        <a href="/entry">
-                            Create Entry
-                        </a>
-                    </div>
+                    <!--  vvvDASHBOARD NAVIGATIONvvv -->
                 </div>
+                <div class="dash-all-buttons">
+                    <div class="dash-buttons">
+                        <div class="dash-button">
+                            <button type="submit">Previous</button>
+                        </div>
+                        <div class="dash-button">
+                            <button type="submit">Next</button>
+                        </div>
+                    </div>
+                <!-- ^^^DASHBOARD NAVIGATION^^^-->
+            </div>
+            <a href="/entry">
+                Create Entry
+            </a>
+            </div>
         </section>
     </div>
 
