@@ -94,15 +94,31 @@
 
                     </div>
                 </div> -->
-                <div>
-                    <br>
-                    <br>
+                <div class="entriesContainer">
                     <% entryItems.forEach(function(entryItem){ %>
-                        <%=entryItem.date  %> <br>
-                        <%=entryItem.title %> <br>
-                        <%=entryItem.mood %> <br>
-                        <%=entryItem.entry %> <br>
-                    <% }); %>
+                        <article class="journalEntry">
+                            <div class="titleDateMoodContainer">
+                                <h3><%= entryItem.title %></h3>
+                                <div class="date"><%=entryItem.date %></div>
+                            </div>
+                            <div class="moodImgContainer">
+                            <% let moodIcon = entryItem.mood %> 
+                            <% console.log(moodIcon) %>
+                           <% if (moodIcon = "happy") { %> 
+                            <iconify-icon Id="happy" icon="fa6-regular:face-smile"></iconify-icon>
+                           <% } else if (moodIcon = "content") { %> 
+                            <iconify-icon id="content" icon="fa6-regular:face-meh"></iconify-icon>
+                           <% } else if (moodIcon = "indifferent") { %> 
+                            <iconify-icon id="indifferent" icon="fa6-regular:face-rolling-eyes"></iconify-icon>
+                           <% } else if (moodIcon = "angry") { %> 
+                            <iconify-icon id="angry" icon="fa6-regular:face-angry"></iconify-icon>
+                           <% } else { %>
+                            <iconify-icon id="sad" icon="fa6-regular:face-frown"></iconify-icon>
+                           <% } %> 
+                            </div>
+                            <p><%=entryItem.entry %></p>
+                        </article>
+                    <% }) %>
                     <div class="dash-all-buttons">
                         <!-- <div class="dash-buttons">
                             <div class="dash-button">

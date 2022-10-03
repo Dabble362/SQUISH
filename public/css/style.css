@@ -564,3 +564,31 @@ ul {
   position: relative;
   letter-spacing: 1px;
 }
+/******************************************
+/* JOURNAL ENTRY STYLES
+/*******************************************/
+.entriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.journalEntry {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 4em;
+  background-color: #697BD8;
+  width: 200px;
+}
+.journalEntry h3, div.date,.journalEntry p {
+  background-color: white;
+  width: fit-content;
+  padding: 0.25em;
+  font-family: serif;
+  font-weight: 800;
+}
+.titleDateMoodContainer {
+  display: flex;
+}
+
+/** **/
+/** **/
