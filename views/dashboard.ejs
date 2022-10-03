@@ -67,7 +67,7 @@
 
             <div class="dash-content-bkgrnd">
                 <div class="dash-filter">
-                    <!-- <span>Filter:</span>
+                    <span>Filter:</span>
                     <div class="emoji">
 
                         <label class="moodContainer">
@@ -92,7 +92,7 @@
                             <iconify-icon id="sad" class="selectState" icon="fa6-regular:face-frown"></iconify-icon>
                         </label>
 
-                    </div> -->
+                    </div>
                 </div>
                 <div class="entriesContainer">
                     <% entryItems.forEach(function(entryItem){ %>
@@ -105,13 +105,13 @@
                                 <div class="moodImgContainer">
                                     <% let moodIcon = entryItem.mood %> 
                                     <% console.log(moodIcon) %>
-                                    <% if (moodIcon = "happy") { %> 
+                                    <% if (moodIcon === "happy") { %> 
                                     <iconify-icon Id="happy" icon="fa6-regular:face-smile"></iconify-icon>
-                                    <% } else if (moodIcon = "content") { %> 
+                                    <% } else if (moodIcon === "content") { %> 
                                     <iconify-icon id="content" icon="fa6-regular:face-meh"></iconify-icon>
-                                    <% } else if (moodIcon = "indifferent") { %> 
+                                    <% } else if (moodIcon === "indifferent") { %> 
                                     <iconify-icon id="indifferent" icon="fa6-regular:face-rolling-eyes"></iconify-icon>
-                                    <% } else if (moodIcon = "angry") { %> 
+                                    <% } else if (moodIcon === "angry") { %> 
                                     <iconify-icon id="angry" icon="fa6-regular:face-angry"></iconify-icon>
                                     <% } else { %>
                                     <iconify-icon id="sad" icon="fa6-regular:face-frown"></iconify-icon>

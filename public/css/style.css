@@ -412,13 +412,12 @@ iconify-icon {
 
 .dash-all-buttons {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .dash-buttons {
   display: flex;
-  align-items: center;
-  margin-left: 37.5em;
 }
 
 .dash-button button {
@@ -430,7 +429,7 @@ iconify-icon {
   background: #ffffff;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  margin: 1em 2em 0 0;
+  margin: 1em;
 }
 
 .dash-add-entry img {
