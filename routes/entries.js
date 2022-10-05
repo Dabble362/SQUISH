@@ -7,6 +7,4 @@ router.get("/", ensureAuth, EntriesController.getEntries);
 
 router.post("/", ensureAuth, EntriesController.createEntry);
 
-// router.delete("/", EntriesController.deleteTodo);
-
 module.exports = router; 

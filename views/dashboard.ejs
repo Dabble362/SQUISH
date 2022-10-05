@@ -126,10 +126,10 @@
                 <div class="dash-all-buttons">
                     <div class="dash-buttons">
                         <div class="dash-button">
-                            <button type="submit">Previous</button>
+                            <a href="/dashboard?skip=<%=skip-4 %> ">Previous</a>
                         </div>
                         <div class="dash-button">
-                            <button type="submit">Next</button>
+                            <a href="/dashboard?skip=<%=skip+4 > totalEntries ? skip : skip+4 %>">Next</a>
                         </div>
                     </div>
                 <!-- ^^^DASHBOARD NAVIGATION^^^-->
