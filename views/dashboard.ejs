@@ -123,19 +123,13 @@
                     <% }) %>
                     <!--  vvvDASHBOARD NAVIGATIONvvv -->
                 </div>
-                <div class="dash-all-buttons">
-                    <div class="dash-buttons">
-                        <div class="dash-button">
-                            <a href="/dashboard?skip=<%=skip-4 %> ">Previous</a>
-                        </div>
-                        <div class="dash-button">
-                            <a href="/dashboard?skip=<%=skip+4 > totalEntries ? skip : skip+4 %>">Next</a>
-                        </div>
+                    <div class="dash-link-container">
+                        <a href="/dashboard?skip=<%=skip-4 %> ">Previous</a>
+                        <a href="/dashboard?skip=<%=skip+4 > totalEntries ? skip : skip+4 %>">Next</a>
                     </div>
                 <!-- ^^^DASHBOARD NAVIGATION^^^-->
-            </div>
-            <a href="/entry">
-                Create Entry
+            <a class="plusButton radius" style="--l:63px;--t:8px;--c2:#512aa9" href="/entry">
+
             </a>
             </div>
         </section>

@@ -369,6 +369,8 @@ DASHBOARD
   display: flex;
   flex-direction: column;
   margin: 2em 0 12em 0;
+  justify-content: space-evenly;
+
 }
 
 .dash-filter {
@@ -410,32 +412,55 @@ iconify-icon {
   width: 25em;
 }
 
-.dash-all-buttons {
+.dash-link-container {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-.dash-buttons {
-  display: flex;
+.dash-link-container a {
+  border: 0.2rem solid rgba(110, 92, 157, 1);
+  border-radius: 2rem;
+  width: 9rem;
+}
+.dash-link-container a:hover {
+  background-color: #a88beb;
+  color: white;
 }
 
-.dash-button button {
-  width: 7em;
-  height: 2em;
-  font-size: 20px;
-  border-radius: 20px;
-  border: solid #7660a5;
-  background: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  margin: 1em;
-}
 
 .dash-add-entry img {
   width: 5em;
   display: flex;
   margin-left: 28em;
+}
+
+.plusButton {
+  --t:8px;   /* Thickness */
+  --l:55px;  /* size of the symbol */
+  --s:10px;  /* space around the symbol */
+  --c1:#fff; /* Plus color*/
+  --c2:#512aa9; /* background color*/
+
+  display:inline-block;
+  width:var(--l);
+  height:var(--l);
+  padding:var(--s);
+  box-sizing:border-box; /*Remove this if you don't want space to be included in the size*/
+  
+  background:
+    linear-gradient(var(--c1) 0 0) content-box,
+    linear-gradient(var(--c1) 0 0) content-box,
+    var(--c2);
+  background-position:center;
+  background-size: 100% var(--t),var(--t) 100%;
+  background-repeat:no-repeat;
+  position: relative;
+  left: 805px;
+  bottom: 30px;
+}
+
+.radius {
+  border-radius:50%;
 }
 
 /******************************************
