@@ -370,7 +370,7 @@ DASHBOARD
   flex-direction: column;
   margin: 2em 0 12em 0;
   justify-content: space-evenly;
-
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 80%);
 }
 
 .dash-filter {
@@ -457,6 +457,7 @@ iconify-icon {
   position: relative;
   left: 805px;
   bottom: 30px;
+  box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 60%);
 }
 
 .radius {
@@ -610,6 +611,7 @@ a.menu-link:hover {
   width: 40em;
   height: 26em;
   border-radius: 25px;
+  box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 60%);
 }
 .journalEntry h3, div.date,.journalEntry p {
   background-color: white;
@@ -620,6 +622,7 @@ a.menu-link:hover {
   font-weight: 800;
   font-size: 1.75em;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 80%);
 }
 .journalEntry p {
   width: 97%;
@@ -638,6 +641,7 @@ a.menu-link:hover {
 }
 .moodImgContainer iconify-icon {
 font-size: 5em;
+filter: drop-shadow(1px 1px 1px rgba(165, 136, 233, 0.4)); /** rgba(66, 45, 90, 0.4) **/
 }
 /** **/
 /** **/

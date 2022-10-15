@@ -4,6 +4,7 @@ module.exports = {
   getEntries: async (req, res) => {
     console.log(req.user);
     const skip = parseInt(req.query.skip || '0') <=0 ? 0 : parseInt(req.query.skip);
+    console.log(req.query.mood)
     const limit = req.query.limit || 4;
     try {
       const entryItems = await Entries.aggregate([
@@ -11,7 +12,7 @@ module.exports = {
           '$facet': {
             'data': [
               {
-                '$match': { userId: req.user.id  }
+                '$match': { userId: req.user.id } //, mood: req.query.mood
               }, {
                 '$skip': skip
               }, {
