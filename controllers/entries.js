@@ -2,9 +2,7 @@ const Entries = require("../models/Entries");
 
 module.exports = {
   getEntries: async (req, res) => {
-    console.log(req.user);
-    const skip = parseInt(req.query.skip || '0') <=0 ? 0 : parseInt(req.query.skip);
-    console.log(req.query.mood)
+    const skip = parseInt(req.query.skip || '0') <= 0 ? 0 : parseInt(req.query.skip);
     const limit = req.query.limit || 4;
     try {
       const entryItems = await Entries.aggregate([
@@ -12,7 +10,7 @@ module.exports = {
           '$facet': {
             'data': [
               {
-                '$match': { userId: req.user.id } //, mood: req.query.mood
+                '$match': { userId: req.user.id} //
               }, {
                 '$skip': skip
               }, {
@@ -27,8 +25,6 @@ module.exports = {
           }
         }
       ]);
-      console.log({entryItems})
-      console.log(entryItems[0].count)
       const totalEntries = entryItems[0].count[0].count;
       res.render("dashboard.ejs", {
         entryItems: entryItems[0].data,
