@@ -50,15 +50,5 @@ module.exports = {
     } catch (err) {
       console.log(err);
     }
-  },
-  deleteEntry: async (req, res) => {
-    console.log(req.body.todoIdFromJSFile);
-    try {
-      await Todo.findOneAndDelete({ _id: req.body.todoIdFromJSFile });
-      console.log("Deleted Todo");
-      res.json("Deleted It");
-    } catch (err) {
-      console.log(err);
-    }
-  },
+  }
 };
