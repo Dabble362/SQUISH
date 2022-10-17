@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">`
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/menu.js"></script>
 
     <title>Squish</title>
   </head>
   <body>
     <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
     <div class="alert alert-danger"><%= el.msg %></div>
-    <% }) %> <% } %> <% if (locals.messages.info) { %> <% messages.info.forEach(
-    el => { %>
+    <% }) %> <% } %> <% if (locals.messages.info) { %> <% messages.info.forEach( el => { %>
     <div class="alert alert-danger"><%= el.msg %></div>
     <% }) %> <% } %>
 
-    <!-- HAMBURGER MENU -->
+      <header class="index-header">
     <div class="menu-container">
       <div class="menu-wrapper">
         <div id="hamburger-menu">
@@ -25,9 +29,8 @@
           <span></span>
           <span></span>
         </div>
-        <!-- hamburger-menu -->
       </div>
-      <!-- menu-wrapper -->
+
 
       <ul class="menu-list accordion">
         <li class="accordion-toggle nav1">
@@ -45,18 +48,14 @@
 
       </ul>
     </div>
-
-    <!-- LOGIN BODY -->
-
-    <!--ICON-->
     <div class="icon">
       <img src="/logo.png" alt="squish-icon" />
     </div>
+      </header>
 
-    <!-- LOGIN -->
 
     <div class="cardContainer">
-      <div class="card">
+      <div class="card" id="signUp-card">
         <div class="cardFront flip" id="cardFront">
           <div class="formTitle">
             <h2>Sign Up</h2>
@@ -106,5 +105,6 @@
         </div>
       </div>
     </div>
+
   </body>
 </html>

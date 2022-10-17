@@ -91,7 +91,7 @@ input, textarea, .formInputs, a.menu-link:hover {
 }
 
 .cardContainer, .loginFormInput, .loginForm, .signupForm, .cardFront, .cardBack, .journalForm, .entry, div.formPage,
-.dash-body, .dash-content-bkgrnd, .dash-images, .titleDateMoodContainer, .journalEntry {
+.dash-body, .dash-content-bkgrnd, .dash-images, .titleDateMoodContainer, .journalEntry, .journalInputs {
   flex-direction: column;
 }
 
@@ -120,6 +120,10 @@ input, textarea, .formInputs, a.menu-link:hover {
   padding: 3rem;
   width: 30rem;
   height: 25rem;
+}
+
+#signUp-card {
+  height: 33rem;
 }
 
 .card h2, .welcome {
@@ -563,5 +567,87 @@ ul {
 font-size: 5em;
 filter: drop-shadow(1px 1px 1px rgba(165, 136, 233, 0.4)); /** rgba(66, 45, 90, 0.4) **/
 }
-/** **/
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width: 1000px) {
+  .card, #logo-dashboard, .icon>img {
+    width: 22rem;
+  }
+  .entriesContainer {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    width: auto;
+  }
+  .dash-content-bkgrnd {
+    height: auto;
+    width: 35em;
+  }
+  .journalEntry {
+    width: 90%;
+  }
+  .dash-title h2 {
+    margin: auto;
+  }
+  .dash-nav>ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-container .menu-list {
+    border: 1px gray solid;
+  }
+  /** Dry out below **/
+  #entry-header {
+    display: flex; 
+  }
+  .menu-container .dash-menu-container {
+    display: flex;
+    align-items: center;
+  }
+  .entryIcon {
+    margin: 0;
+    width: auto;
+    display: flex;
+  }
+  .entryIcon img {
+    width: 17rem;
+    display: flex;
+  }
+  .titlebar {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .moodContainer {
+    padding: 0%;
+    margin: 0%;
+  }
+  .entryTitle {
+    margin-bottom: 1rem;
+  }
+  .titlebar h1 {
+    flex: none;
+    text-align: center;
+  }
+  .journalInputs {
+    align-items: center;
+  }
+  .journalInputs label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #title {
+    width: 95%;
+  }
+  .journalInputs input {
+    margin-right: 0;
+  }
+}
+
+
+
+
 /** **/
