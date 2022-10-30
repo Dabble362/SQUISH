@@ -67,6 +67,9 @@
 
             <div class="dash-content-bkgrnd">
                 <div class="entriesContainer">
+                    <% if (entryItems.length === 0) { %> 
+                        <p> No entries found! Create a new entry to get started! </p>
+                        <% } else { %> 
                     <% entryItems.forEach(function(entryItem){ %>
                         <article class="journalEntry">
                             <div class="topSection">
@@ -94,6 +97,7 @@
                             <p><%=entryItem.entry %></p>
                         </article>
                     <% }) %>
+                    <% } %> 
                     <!--  vvvDASHBOARD NAVIGATIONvvv -->
                 </div>
                     <div class="dash-link-container">
