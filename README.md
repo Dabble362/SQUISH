@@ -1,3 +1,5 @@
+<img src="https://i.ibb.co/S75mjZx/squishbanner.jpg" alt="squishbanner" border="0">
+
 # Introduction
 
 Welcome to Squish! 
